@@ -10,13 +10,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarpoolBuddy">
         <activity
-            android:name=".MainActivity"
+            android:name=".Vehicles.VehicleProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vehicles.VehiclesInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vehicles.AddVehicleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuthActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
         </activity>
     </application>
 
